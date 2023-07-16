@@ -10,6 +10,7 @@ using UnityEngine;
 public enum VisType
 {
     Scatterplot,
+    Histogram,
     NumberOfVisTypes
 }
 
@@ -200,8 +201,8 @@ public class Vis
         switch (vistype)
         {
             default:
-            case VisType.Scatterplot:
-                return new VisScatterplot();
+                //case VisType.Scatterplot:
+                return new Histogram();
         }
     }
 
